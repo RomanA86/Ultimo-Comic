@@ -160,7 +160,7 @@ body {
   background-color: var(--color4);
 }
 
-.modal-footer .btn {
+.modal-footer .back {
   background-color: var(--color3);
   text-decoration: none;
 }
@@ -329,11 +329,11 @@ ul {
   }
 }
 
-.btn-carrito {
+.back-carrito {
   background-color: #aacdbe;
 }
 
-.btn-carrito:hover {
+.back-carrito:hover {
   background-color: #83cfae;
 }
 
@@ -345,4 +345,12 @@ ul {
 
 #cajaPrincipal {
   /* width: 100%; */
+}
+
+.btn-carrito{
+  background-color: var(--color1);
+}
+
+.btn-danger{
+  background-color: red;
 }
