@@ -115,6 +115,7 @@ async function getUsers() {
 
 function createCards(name, avatar, Descripcion, precio) {
 //CREACION
+let col = document.createElement('div');
  let card = document.createElement('div');
  let img = document.createElement('img');
  let cardBody = document.createElement('div');
@@ -123,6 +124,7 @@ function createCards(name, avatar, Descripcion, precio) {
  let price = document.createElement('p');
  let btnBuy = document.createElement('button');
 //CLASEO
+col.className = 'col';
 card.className = 'card mx-4 px-0';
 img.className = 'card-img-top';
 cardBody.className = 'card-body';
@@ -148,7 +150,8 @@ cardBody.append(price);
 cardBody.append(btnBuy);
 card.append(img);
 card.append(cardBody);
-document.getElementById('cajaPrincipal').append(card);
+col.append(card);
+document.getElementById('cajaPrincipal').append(col);
 
 return card;
 }
